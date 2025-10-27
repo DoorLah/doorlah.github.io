@@ -1128,3 +1128,36 @@ section {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3);
 }
+
+/* Account Deletion page specific styles */
+.deletion-hero {
+    background: var(--bg-card);
+    padding: 1.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.25rem;
+    animation: fadeInUp 0.6s ease both;
+}
+
+.sad-message {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin: 0.5rem 0 1rem 0;
+}
+
+.mail-button {
+    display: inline-block;
+    background: var(--accent-orange);
+    color: var(--text-primary);
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.mail-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.25);
+}
