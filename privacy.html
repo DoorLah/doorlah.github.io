@@ -8,20 +8,64 @@
     <meta name="description" content="DoorLah Privacy Policy — what data we collect and how we use it.">
 </head>
 <body>
-    <main class="container content">
-        <header class="section-header">
-            <h1>Privacy Policy</h1>
-            <p class="muted">Last updated: 27 October 2025</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="logo">
+                <span class="brand-name">DoorLah</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#community">Community</a>
+                <a href="index.html#download" class="cta-button">Join Tester List</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.instagram.com/doorlah" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162S8.597 18.162 12 18.162 18.162 15.403 18.162 12 15.403 5.838 12 5.838zM12 15c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/doorlah" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.24 8.24h4.5V24h-4.5V8.24zM8.98 8.24h4.32v2.16h.06c.6-1.14 2.06-2.34 4.24-2.34 4.54 0 5.38 2.98 5.38 6.86V24h-4.5v-7.62c0-1.82-.04-4.16-2.54-4.16-2.54 0-2.92 1.98-2.92 4.02V24h-4.5V8.24z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/door_lah" aria-label="X" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-        <section>
-            <p>DoorLah (“we”, “us” or “our”) is committed to protecting the privacy of users of the DoorLah mobile app and this website. This Privacy Policy explains what personal and non-personal information we collect, why we collect it, how we use and share it, and the choices you have regarding your information.</p>
-        </section>
+    <!-- Main Content -->
+    <main class="policy-page">
+        <div class="container">
+            <div class="policy-content">
+                <header class="policy-header">
+                    <h1>Privacy Policy</h1>
+                    <p class="policy-subtitle">Last updated: 27 October 2025</p>
+                </header>
 
-        <h2>1. Scope</h2>
-        <p>This policy applies to personal data collected through the DoorLah mobile application and any related websites or services we operate.</p>
+                <div class="policy-section">
+                    <p>DoorLah ("we", "us" or "our") is committed to protecting the privacy of users of the DoorLah mobile app and this website. This Privacy Policy explains what personal and non-personal information we collect, why we collect it, how we use and share it, and the choices you have regarding your information.</p>
+                </div>
 
-        <h2>2. Information We Collect</h2>
+                <div class="policy-section">
+                    <h2>1. Scope</h2>
+                    <p>This policy applies to personal data collected through the DoorLah mobile application and any related websites or services we operate.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>2. Information We Collect</h2>
         <ul>
             <li><strong>Account and Profile Information:</strong> Name, email address, phone number, profile picture, community/estate selection, username and other profile fields you provide when you register.</li>
             <li><strong>Authentication & Account Data:</strong> Credentials and tokens used for authentication, session data, and identifiers. (We recommend using secure authentication providers.)</li>
@@ -34,8 +78,10 @@
             <li><strong>Local Data & Caching:</strong> Data stored locally on your device using SQLite (sqflite), shared preferences, or files (for caching and offline support). This includes cached copies of communities, listings, messages, and user profile data as described in our README caching strategy.</li>
             <li><strong>Cookies & Local Storage (Web):</strong> If you access DoorLah through a web interface, we may use cookies or local storage for session management and preferences.</li>
         </ul>
+                </div>
 
-        <h2>3. How We Use Your Information</h2>
+                <div class="policy-section">
+                    <h2>3. How We Use Your Information</h2>
         <ul>
             <li>To provide and maintain the app’s core features (chat, marketplace, shops, services).</li>
             <li>To enable account management, authentication, and profile functionality.</li>
@@ -44,8 +90,10 @@
             <li>To send important notices, updates, security alerts and marketing (with your consent where required).</li>
             <li>To enforce our Terms of Service and protect the rights, property or safety of DoorLah, our users or others.</li>
         </ul>
+                </div>
 
-        <h2>4. Legal Basis for Processing (where applicable)</h2>
+                <div class="policy-section">
+                    <h2>4. Legal Basis for Processing (where applicable)</h2>
         <p>Where relevant (for example, users in the EU), we rely on the following legal bases:</p>
         <ul>
             <li>Performance of a contract — to provide the services you requested (e.g., account, messaging, bookings).</li>
@@ -53,19 +101,23 @@
             <li>Legitimate interests — for fraud prevention, network and information security, product improvement and analytics (balanced against user rights).</li>
             <li>Consent — for optional marketing communications, location services and other features where we ask your permission.</li>
         </ul>
+                </div>
 
-        <h2>5. Sharing & Third-Party Services</h2>
-        <p>We may share information with third parties to provide the service or if required by law. Typical recipients include:</p>
+                <div class="policy-section">
+                    <h2>5. Information Sharing and Disclosure</h2>
+        <p>We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:</p>
         <ul>
-            <li><strong>Supabase:</strong> Database and authentication services (we use <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> for backend and realtime features).</li>
-            <li><strong>Cloud Storage Providers:</strong> For storing uploaded images and media.</li>
-            <li><strong>Analytics & Crash Reporting:</strong> Third-party tools to help us understand app usage and improve stability.</li>
-            <li><strong>Payment Processors:</strong> For any payments or in-app purchases (we do not store raw card data unless explicitly stated — rely on payment processors).</li>
-            <li><strong>Legal & Safety:</strong> When required to comply with law enforcement, court orders, or to protect rights and safety.</li>
+            <li><strong>Service Providers:</strong> With trusted third-party service providers who help us operate our app (e.g., Supabase for database, payment processors). These providers are contractually obligated to protect your data.</li>
+            <li><strong>Legal Requirements:</strong> When required by law, court order, or government request.</li>
+            <li><strong>Safety & Security:</strong> To protect the safety, rights, or property of DoorLah, our users, or the public.</li>
+            <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets.</li>
+            <li><strong>With Your Consent:</strong> When you explicitly agree to sharing.</li>
         </ul>
         <p>We provide only the minimum information necessary for these third-party services to perform their functions. Each third-party has its own privacy policy; please review those before using related features.</p>
+                </div>
 
-        <h2>6. Local Caching & Offline Storage</h2>
+                <div class="policy-section">
+                    <h2>6. Local Caching & Offline Storage</h2>
         <p>DoorLah uses local caching to improve performance and provide offline access. As described in our README, cached data improves load times and reduces API requests. Typical cache TTLs include:</p>
         <ul>
             <li>Communities: 24 hours</li>
@@ -77,46 +129,84 @@
             <li>User Profile: 2 hours</li>
         </ul>
         <p>Cached data is stored using SQLite (sqflite), shared preferences, and file storage on the device. You can clear local data by uninstalling the app or via any cache management features exposed in the app settings.</p>
+                </div>
 
-        <h2>7. Data Retention</h2>
-        <p>We retain your personal data only as long as necessary to provide services, comply with legal obligations, resolve disputes, and enforce agreements. Specific retention periods depend on data type and business needs (for example, messages are retained according to our chat retention policy and local caching rules).</p>
-
-        <h2>8. Your Rights</h2>
-        <p>Depending on your jurisdiction, you may have rights including:</p>
+                <div class="policy-section">
+                    <h2>7. Data Retention</h2>
+        <p>We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy, unless a longer retention period is required by law. For example:</p>
         <ul>
-            <li>Access your personal data</li>
-            <li>Correct or update inaccurate information</li>
-            <li>Request deletion of your account and personal data</li>
-            <li>Object to or restrict certain processing</li>
-            <li>Request data portability</li>
-            <li>Withdraw consent where we rely on it</li>
+            <li>Account data is retained while your account is active and for a reasonable period after deactivation.</li>
+            <li>Messages and community content may be retained for operational purposes but can be deleted upon request.</li>
+            <li>Analytics and usage data is typically aggregated and retained for up to 2 years.</li>
         </ul>
-        <p>To exercise rights, contact us at the email address below. We may need to verify your identity before fulfilling requests.</p>
+                </div>
 
-        <h2>9. Security</h2>
-        <p>We implement industry-standard security measures to protect data (encryption in transit, access controls, secure backend services). However, no system is perfectly secure. If you suspect a security issue, please contact us immediately.</p>
+                <div class="policy-section">
+                    <h2>8. Your Rights and Choices</h2>
+        <p>You have several rights regarding your personal data:</p>
+        <ul>
+            <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal data (subject to legal exceptions).</li>
+            <li><strong>Portability:</strong> Request your data in a portable format.</li>
+            <li><strong>Objection:</strong> Object to processing based on legitimate interests.</li>
+            <li><strong>Restriction:</strong> Request restriction of processing in certain circumstances.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:doorlah.singapore@gmail.com">doorlah.singapore@gmail.com</a>.</p>
+                </div>
 
-        <h2>10. Children</h2>
-        <p>DoorLah is not intended for children under 13 (or a higher age where local law requires). We do not knowingly collect personal information from children. If you believe we have collected data from a child, please contact us to request deletion.</p>
+                <div class="policy-section">
+                    <h2>9. Data Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. This includes:</p>
+        <ul>
+            <li>Encryption of data in transit and at rest.</li>
+            <li>Secure authentication and access controls.</li>
+            <li>Regular security assessments and updates.</li>
+            <li>Employee training on data protection.</li>
+        </ul>
+        <p>However, no method of transmission over the internet or electronic storage is 100% secure, so we cannot guarantee absolute security.</p>
+                </div>
 
-        <h2>11. International Transfers</h2>
-        <p>Your information may be transferred to and processed in countries other than your residence (for example, servers operated by our service providers). We take steps to ensure adequate safeguards are in place.</p>
+                <div class="policy-section">
+                    <h2>10. Children's Privacy</h2>
+        <p>DoorLah is not intended for children under 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take steps to delete it promptly.</p>
+                </div>
 
-        <h2>12. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy to reflect changes in practices or legal requirements. We will post the updated policy with a revised "Last updated" date. Continued use of the service after changes means you accept the updated policy.</p>
+                <div class="policy-section">
+                    <h2>11. International Data Transfers</h2>
+        <p>Your data may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers, including:</p>
+        <ul>
+            <li>Using services with adequate data protection certifications.</li>
+            <li>Implementing standard contractual clauses.</li>
+            <li>Ensuring compliance with applicable data protection laws.</li>
+        </ul>
+                </div>
 
-        <h2>13. Contact Us</h2>
-        <p>If you have questions or wish to exercise your rights, please contact us:</p>
+                <div class="policy-section">
+                    <h2>12. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+        <ul>
+            <li>Posting the updated policy on our website.</li>
+            <li>Sending you an email notification (if applicable).</li>
+            <li>Showing an in-app notification.</li>
+        </ul>
+        <p>Your continued use of DoorLah after changes take effect constitutes acceptance of the updated policy.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>13. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
         <ul>
             <li>Email: <a href="mailto:doorlah.singapore@gmail.com">doorlah.singapore@gmail.com</a></li>
-            <li>Address: (If applicable) — provide a postal address here if you want to include one.</li>
+            <li>Address: Singapore</li>
         </ul>
         <p>For information about our safety standards and how to report abuse or concerns (including child safety issues), please see our <a href="child-safety.html">Safety Standards</a> page.</p>
         <p>To request permanent deletion of your DoorLah account and personal data, visit our <a href="account-deletion.html">Account Deletion</a> page for instructions and the verification steps we require.</p>
+                </div>
 
-        <footer class="policy-footer">
-            <p>Thank you for using DoorLah. <a href="index.html">Return to Home</a></p>
-        </footer>
+                <div class="policy-footer">
+                    <a href="index.html" class="btn btn-secondary">Return to Home</a>
+                </div>
     </main>
 
     <script src="script.js"></script>
