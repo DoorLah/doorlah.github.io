@@ -36,11 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Navbar background on scroll
         const navbar = document.querySelector('.navbar');
         if (window.pageYOffset > 50) {
-            navbar.style.background = 'rgba(10, 22, 40, 0.98)';
-            navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.4)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.08)';
+            navbar.style.backdropFilter = 'blur(20px)';
+            navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
         } else {
-            navbar.style.background = 'rgba(10, 22, 40, 0.95)';
-            navbar.style.boxShadow = 'none';
+            navbar.style.background = 'rgba(255, 255, 255, 0.05)';
+            navbar.style.backdropFilter = 'blur(20px)';
+            navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
         }
     });
     
@@ -158,8 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
-                entry.target.style.opacity = '1';
+                entry.target.classList.add('animate-fade-in-up');
                 observer.unobserve(entry.target);
             }
         });
@@ -171,7 +172,6 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     
     animatedElements.forEach(el => {
-        el.style.opacity = '0';
         observer.observe(el);
     });
     
