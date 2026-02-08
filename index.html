@@ -3,529 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DoorLah - Connecting Singapore Communities. Join your neighbors, discover local services, shop at neighborhood stores, and build stronger community bonds.">
-    <meta name="keywords" content="Singapore, community app, HDB, condo, neighborhood, local services, marketplace">
-    <title>DoorLah - Connect with Your Singapore Community</title>
+    <meta name="description" content="DoorLah connects Singapore communities with chat, marketplace, local services, and business tools for HDBs, condos, and private estates.">
+    <meta name="keywords" content="DoorLah, Singapore, community app, HDB, condo, private estate, marketplace, local services">
+    <meta name="theme-color" content="#1A237E">
+    <title>DoorLah - Your Neighborhood, Connected</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="logo">
-                <span class="brand-name">DoorLah</span>
-            </div>
-            <div class="nav-links">
+    <header class="site-nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#top">
+                <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="brand-logo">
+                <span>DoorLah</span>
+            </a>
+            <nav class="nav-links" aria-label="Primary">
                 <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#community">Community</a>
-                <a href="#download" class="cta-button">Get Started</a>
-            </div>
-            <div class="nav-social">
-                <a href="https://www.instagram.com/doorlah" aria-label="Instagram" target="_blank" rel="noopener">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162S8.597 18.162 12 18.162 18.162 15.403 18.162 12 15.403 5.838 12 5.838z"/>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/company/doorlah" aria-label="LinkedIn" target="_blank" rel="noopener">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.24 8.24h4.5V24h-4.5V8.24zM8.98 8.24h4.32v2.16h.06c.6-1.14 2.06-2.34 4.24-2.34 4.54 0 5.38 2.98 5.38 6.86V24h-4.5v-7.62c0-1.82-.04-4.16-2.54-4.16-2.54 0-2.92 1.98-2.92 4.02V24h-4.5V8.24z"/>
-                    </svg>
-                </a>
-                <a href="https://x.com/door_lah" aria-label="X" target="_blank" rel="noopener">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                </a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <a href="#business">Business Mode</a>
+                <a href="#tech">Tech Edge</a>
+                <a href="#community">Singapore</a>
+                <a href="#download" class="nav-cta">Download</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Your Community,<br>
-                    <span class="highlight">Connected</span>
-                </h1>
-                <p class="hero-subtitle">
-                    DoorLah brings together Singapore housing communities - connecting neighbors, 
-                    facilitating local commerce, and enhancing community engagement.
-                </p>
-                <div class="hero-cta">
-                    <a href="https://forms.gle/DwSXCWDer9uvjH8x7" class="btn btn-primary" target="_blank" rel="noopener">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Community-first for Singapore</p>
+                    <h1>Your Neighborhood, Connected.</h1>
+                    <p class="hero-subtitle">
+                        The all-in-one community hub for Singapore's HDBs, Condominiums, and Private Estates.
+                        Chat with neighbors, discover local services, and shop within your trusted community.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#download">Download DoorLah</a>
+                        <a class="btn ghost" href="#features">Explore Features</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone">
+                        <div class="phone-header">
+                            <div class="status-dot"></div>
+                            <span>Explore</span>
+                            <div class="status-badge">HDB 121</div>
+                        </div>
+                        <div class="phone-grid">
+                            <div class="tile chat">
+                                <div class="tile-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                                    </svg>
+                                </div>
+                                <span>Community Chat</span>
+                            </div>
+                            <div class="tile notice">
+                                <div class="tile-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M13 2 3 14h9l-1 8 10-12h-9z"/>
+                                    </svg>
+                                </div>
+                                <span>Notice Board</span>
+                            </div>
+                            <div class="tile market">
+                                <div class="tile-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="9" cy="21" r="1"/>
+                                        <circle cx="20" cy="21" r="1"/>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </div>
+                                <span>Marketplace</span>
+                            </div>
+                            <div class="tile services">
+                                <div class="tile-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M14.7 6.3a4 4 0 0 0-5.7 5.7l6.6 6.6 5.7-5.7z"/>
+                                        <path d="M8.2 11.8 6 14l4 4 2.2-2.2"/>
+                                    </svg>
+                                </div>
+                                <span>Services & Shops</span>
+                            </div>
+                        </div>
+                        <div class="phone-footer">
+                            <div class="home-button large" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                    <path d="M3 11.5 12 4l9 7.5"/>
+                                    <path d="M6 10v9h12v-9"/>
+                                    <path d="M10 19v-5h4v5"/>
+                                </svg>
+                            </div>
+                            <div class="footer-tabs">
+                                <span>Home</span>
+                                <span>Discover</span>
+                                <span>Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="explore">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Explore</p>
+                    <h2>Everything your community needs, in one grid.</h2>
+                    <p>Four pillars that make DoorLah the everyday app for your neighborhood.</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card chat reveal">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                            </svg>
+                        </div>
+                        <h3>Community Chat</h3>
+                        <p>Connect and communicate in real time with your neighbors, announcements, and resident groups.</p>
+                    </article>
+                    <article class="feature-card notice reveal">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 3h16v18H4z"/>
+                                <path d="M8 7h8M8 11h8M8 15h6"/>
+                            </svg>
+                        </div>
+                        <h3>Notice Board</h3>
+                        <p>Stay updated with the latest community announcements, events, and important notices.</p>
+                    </article>
+                    <article class="feature-card market reveal">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="9" cy="21" r="1"/>
+                                <circle cx="20" cy="21" r="1"/>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                            </svg>
+                        </div>
+                        <h3>Marketplace</h3>
+                        <p>Buy, sell, or rent items, rooms, and homes within your community with trusted listings.</p>
+                    </article>
+                    <article class="feature-card services reveal">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 7h16v10H4z"/>
+                                <path d="M7 7V5a5 5 0 0 1 10 0v2"/>
+                            </svg>
+                        </div>
+                        <h3>Local Services & Shops</h3>
+                        <p>Discover trusted service providers and neighborhood shops at your doorstep.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="business" class="business">
+            <div class="container business-grid">
+                <div class="business-copy reveal">
+                    <p class="eyebrow">Business Mode</p>
+                    <h2>Your Passion, Your Business, Your Neighborhood.</h2>
+                    <p>
+                        Toggle instantly into Business Mode to manage your own shop or service.
+                        DoorLah turns residents into local entrepreneurs with instant digital storefronts.
+                    </p>
+                    <ul class="checklist">
+                        <li>Instant digital storefronts for community-based commerce.</li>
+                        <li>Manage bookings, promotions, and availability in one place.</li>
+                        <li>Reach neighbors first, with verified community audiences.</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal">
+                    <div class="business-chip">Business Mode</div>
+                    <h3>Live storefront preview</h3>
+                    <div class="business-metrics">
+                        <div>
+                            <span>Orders</span>
+                            <strong>48 this week</strong>
+                        </div>
+                        <div>
+                            <span>Bookings</span>
+                            <strong>12 upcoming</strong>
+                        </div>
+                        <div>
+                            <span>Response time</span>
+                            <strong>under 5 min</strong>
+                        </div>
+                    </div>
+                    <a class="btn primary" href="#download">Activate Business Mode</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="tech">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Fast & Reliable</p>
+                    <h2>Instant Load. Offline Ready.</h2>
+                    <p>Smart caching keeps DoorLah lightning fast and dependable, even with weak coverage.</p>
+                </div>
+                <div class="tech-grid">
+                    <article class="tech-card reveal">
+                        <h3>90-95% faster performance</h3>
+                        <p>Predictive caching ensures most views load instantly, even on the go.</p>
+                    </article>
+                    <article class="tech-card reveal">
+                        <h3>Offline-first access</h3>
+                        <p>Browse notices and saved listings without needing a live connection.</p>
+                    </article>
+                    <article class="tech-card reveal">
+                        <h3>Smarter data sync</h3>
+                        <p>Reduced data usage and fewer API calls for consistent performance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="singapore">
+            <div class="container singapore-grid">
+                <div class="singapore-copy reveal">
+                    <p class="eyebrow">Singapore Focus</p>
+                    <h2>Made with ❤️ for Singapore Communities.</h2>
+                    <p>Designed for HDBs, Condominiums, and Private Estates with local-first workflows.</p>
+                    <div class="estate-tags">
+                        <span>HDB</span>
+                        <span>Condominiums</span>
+                        <span>Private Estates</span>
+                    </div>
+                </div>
+                <div class="singapore-card reveal">
+                    <h3>Neighborhood pulse</h3>
+                    <p>From notice updates to hyperlocal listings, every interaction feels like your block.</p>
+                    <div class="pulse-grid">
+                        <div>
+                            <strong>48</strong>
+                            <span>Active listings</span>
+                        </div>
+                        <div>
+                            <strong>12</strong>
+                            <span>New notices</span>
+                        </div>
+                        <div>
+                            <strong>8</strong>
+                            <span>Local services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <div class="container download-card">
+                <div>
+                    <p class="eyebrow">Get Early Access</p>
+                    <h2>Download DoorLah and join the tester list.</h2>
+                    <p>Be the first to experience the premium neighborhood hub built for Singapore communities.</p>
+                </div>
+                <div class="download-actions">
+                    <a class="btn primary" href="https://forms.gle/DwSXCWDer9uvjH8x7" target="_blank" rel="noopener">Join Tester List</a>
+                    <div class="store-row">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on App Store" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand footer-brand">
+                    <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="brand-logo">
+                    <span>DoorLah</span>
+                </div>
+                <p>Connecting Singapore communities, one neighborhood at a time.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/doorlah" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17" cy="7" r="1"/>
                         </svg>
-                        Join Tester List
                     </a>
-                    <a href="#features" class="btn btn-secondary">Learn More</a>
-                </div>
-                <div class="coming-soon-badges">
-                    <div class="badge">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on App Store" class="store-badge">
-                        <span class="badge-label">Coming Soon</span>
-                    </div>
-                    <div class="badge">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-badge">
-                        <span class="badge-label">Coming Soon</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <img src="images/doorlah_splash.png" alt="DoorLah App Preview">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Overview -->
-    <section id="features" class="features-overview">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Everything Your Community Needs</h2>
-                <p class="section-subtitle">
-                    One app to connect, discover, and thrive together
-                </p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    <a href="https://www.linkedin.com/company/doorlah" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 9v9M6 6v.01M10 9v9M10 13a3 3 0 0 1 6 0v5"/>
                         </svg>
-                    </div>
-                    <h3>Community Chat</h3>
-                    <p>Connect with your neighbors in real-time. Share updates, organize events, and build meaningful relationships within your community.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
-                            <line x1="16" y1="8" x2="2" y2="22"/>
-                            <line x1="17.5" y1="15" x2="9" y2="15"/>
+                    </a>
+                    <a href="https://x.com/door_lah" aria-label="X" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4l16 16M20 4L4 20"/>
                         </svg>
-                    </div>
-                    <h3>Local Services</h3>
-                    <p>Find trusted service providers in your community. Book cleaning, plumbing, electrical work, and more with just a few taps.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="9" cy="21" r="1"/>
-                            <circle cx="20" cy="21" r="1"/>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                        </svg>
-                    </div>
-                    <h3>Community Marketplace</h3>
-                    <p>Buy and sell within your neighborhood. From furniture to electronics, find what you need or declutter your home safely.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9 22 9 12 15 12 15 22"/>
-                        </svg>
-                    </div>
-                    <h3>Neighborhood Shops</h3>
-                    <p>Discover and support local businesses. Browse shops, view promotions, and find everything from groceries to dining options nearby.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Features -->
-    <section class="detailed-features">
-        <div class="container">
-            <!-- Feature 1: Home Dashboard -->
-            <div class="feature-detail">
-                <div class="feature-detail-content">
-                    <span class="feature-badge">🏠 Home Hub</span>
-                    <h2>Your Community at a Glance</h2>
-                    <p>Get a personalized overview of your community with quick access to all features. Shop owners and service providers can monitor their business status right from the home screen.</p>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Personalized greeting and community info
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Quick navigation to all features
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Business status dashboard for owners
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Real-time notifications and updates
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature-detail-image">
-                    <div class="gradient-blob blob-1"></div>
-                </div>
-            </div>
-
-            <!-- Feature 2: Services -->
-            <div class="feature-detail reverse">
-                <div class="feature-detail-content">
-                    <span class="feature-badge">🔧 Professional Services</span>
-                    <h2>Find & Offer Services</h2>
-                    <p>Access a network of trusted service providers in your community or become one yourself. From household repairs to professional services, everything is just a booking away.</p>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Browse by category (Cleaning, Plumbing, Electrical, etc.)
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            View pricing, availability, and details
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Book appointments seamlessly
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            List your own services and grow your business
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature-detail-image">
-                    <div class="gradient-blob blob-2"></div>
-                </div>
-            </div>
-
-            <!-- Feature 3: Marketplace -->
-            <div class="feature-detail">
-                <div class="feature-detail-content">
-                    <span class="feature-badge">🛒 Buy & Sell Locally</span>
-                    <h2>Community Marketplace</h2>
-                    <p>Trade safely within your trusted community. From furniture and electronics to everyday items, buy and sell with neighbors you can trust.</p>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Multiple categories (Grocery, Electronics, Furniture, etc.)
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Detailed item listings with images
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Direct messaging with sellers
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Safe transactions within your community
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature-detail-image">
-                    <div class="gradient-blob blob-3"></div>
-                </div>
-            </div>
-
-            <!-- Feature 4: Local Shops -->
-            <div class="feature-detail reverse">
-                <div class="feature-detail-content">
-                    <span class="feature-badge">🏪 Support Local</span>
-                    <h2>Discover Neighborhood Businesses</h2>
-                    <p>Find and support local shops in your community. Browse stores, check operating hours, discover promotions, and help local businesses thrive.</p>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Filter by category (Grocery, Retail, F&B, etc.)
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            View operating hours and promotions
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Contact shops directly
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Register your own shop
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature-detail-image">
-                    <div class="gradient-blob blob-4"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Getting Started is Easy</h2>
-                <p class="section-subtitle">
-                    Join your community in three simple steps
-                </p>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Download & Sign Up</h3>
-                    <p>Get DoorLah from the App Store or Google Play. Create your account and verify your community residence.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Join Your Community</h3>
-                    <p>Select your housing community (HDB, condo, or private estate) and connect with your neighbors instantly.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Start Connecting</h3>
-                    <p>Chat with neighbors, discover services, shop locally, and build stronger community bonds.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Performance Features -->
-    <section class="performance">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Built for Speed & Reliability</h2>
-                <p class="section-subtitle">
-                    Lightning-fast performance with smart caching technology
-                </p>
-            </div>
-            <div class="performance-grid">
-                <div class="performance-card">
-                    <div class="performance-stat">95%</div>
-                    <h3>Faster Load Times</h3>
-                    <p>Instant access to your content with advanced local caching</p>
-                </div>
-                <div class="performance-card">
-                    <div class="performance-stat">80%</div>
-                    <h3>Fewer API Calls</h3>
-                    <p>Smart synchronization reduces data usage</p>
-                </div>
-                <div class="performance-card">
-                    <div class="performance-stat">100%</div>
-                    <h3>Offline Access</h3>
-                    <p>Read cached data even without internet connection</p>
-                </div>
-                <div class="performance-card">
-                    <div class="performance-stat">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3>Secure by Design</h3>
-                    <p>Database security powered by Supabase</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community Section -->
-    <section id="community" class="community-section">
-        <div class="container">
-            <div class="community-content">
-                <h2>For Every Singapore Community</h2>
-                <p class="large-text">
-                    Whether you live in an HDB flat, condominium, or private estate, 
-                    DoorLah brings your community together.
-                </p>
-                <div class="community-types">
-                    <div class="community-type">
-                        <div class="community-icon">🏢</div>
-                        <h3>HDB Communities</h3>
-                        <p>Connect with neighbors across blocks and organize community activities</p>
-                    </div>
-                    <div class="community-type">
-                        <div class="community-icon">🏘️</div>
-                        <h3>Condominiums</h3>
-                        <p>Enhance your condo living with integrated community features</p>
-                    </div>
-                    <div class="community-type">
-                        <div class="community-icon">🏡</div>
-                        <h3>Private Estates</h3>
-                        <p>Foster exclusive community bonds in your neighborhood</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Features -->
-    <section class="business-features">
-        <div class="container">
-            <div class="business-content">
-                <div class="business-text">
-                    <span class="feature-badge">💼 For Business Owners</span>
-                    <h2>Grow Your Local Business</h2>
-                    <p>Are you a service provider or shop owner? DoorLah helps you reach customers right in your community.</p>
-                    <ul class="feature-list">
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Easy shop and service listing management
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Direct customer communication
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Manage bookings and availability
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Promote your offerings to nearby residents
-                        </li>
-                        <li>
-                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Toggle between personal and business modes
-                        </li>
-                    </ul>
-                </div>
-                <div class="business-visual">
-                    <div class="gradient-blob blob-5"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download CTA -->
-    <section id="download" class="download-section">
-        <div class="container">
-            <div class="download-content">
-                <h2>Be Part of Something Special</h2>
-                <p>Join our exclusive tester list and get early access to DoorLah before anyone else. Help shape the future of community connectivity in Singapore.</p>
-                <div class="download-badges">
-                    <a href="https://forms.gle/DwSXCWDer9uvjH8x7" class="btn btn-primary btn-large" target="_blank" rel="noopener">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        Join Tester List - Get Early Access
                     </a>
                 </div>
-                <p class="notify-text">Limited spots available. Early testers get priority access and exclusive features.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#business">Business Mode</a>
+                    <a href="#tech">Tech Edge</a>
+                    <a href="#download">Download</a>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="child-safety.html">Safety Standards</a>
+                    <a href="account-deletion.html">Request Account Deletion</a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <a href="mailto:doorlah.singapore@gmail.com">doorlah.singapore@gmail.com</a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="footer-logo">
-                    <h3>DoorLah</h3>
-                    <p>Connecting Singapore communities, one neighborhood at a time.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/doorlah" aria-label="Instagram" target="_blank" rel="noopener">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/company/doorlah" aria-label="LinkedIn" target="_blank" rel="noopener">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.24 8.24h4.5V24h-4.5V8.24zM8.98 8.24h4.32v2.16h.06c.6-1.14 2.06-2.34 4.24-2.34 4.54 0 5.38 2.98 5.38 6.86V24h-4.5v-7.62c0-1.82-.04-4.16-2.54-4.16-2.54 0-2.92 1.98-2.92 4.02V24h-4.5V8.24z"/>
-                            </svg>
-                        </a>
-                        <a href="https://x.com/door_lah" aria-label="X" target="_blank" rel="noopener">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#how-it-works">How It Works</a></li>
-                            <li><a href="#community">Communities</a></li>
-                            <li><a href="#download">Download</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="mailto:doorlah.singapore@gmail.com">Contact Us</a></li>
-                            <li><a href="child-safety.html">Safety Standards</a></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="account-deletion.html">Request Account Deletion</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 DoorLah. Made with ❤️ for Singapore Communities.</p>
-                    <p class="powered-by">Secure database powered by <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a></p>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; <span class="footer-year">2025</span> DoorLah. Made with ❤️ for Singapore Communities.</p>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M18 15l-6-6-6 6"/>
+    <button class="scroll-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 15l6-6 6 6"/>
         </svg>
     </button>
 
