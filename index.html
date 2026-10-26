@@ -2,360 +2,512 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DoorLah connects Singapore communities with chat, marketplace, local services, and business tools for HDBs, condos, and private estates.">
-    <meta name="keywords" content="DoorLah, Singapore, community app, HDB, condo, private estate, marketplace, local services">
-    <meta name="theme-color" content="#1A237E">
-    <title>DoorLah - Your Neighborhood, Connected</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DoorLah – Your block, all in one place</title>
+    <meta name="description" content="DoorLah is the community app for HDB, condo and landed estates across Singapore. Chat with neighbours, buy and sell nearby, book trusted pros and never miss a notice.">
+    <meta name="keywords" content="DoorLah, Singapore, community app, HDB, condo, landed estate, neighbours, marketplace, local services, notice board">
+    <link rel="canonical" href="https://www.doorlah.com/">
+    <meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0B0C0F" media="(prefers-color-scheme: dark)">
+    <meta name="apple-itunes-app" content="app-id=6755138562">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DoorLah">
+    <meta property="og:url" content="https://www.doorlah.com/">
+    <meta property="og:title" content="DoorLah – Your block, all in one place">
+    <meta property="og:description" content="Chat with neighbours, buy and sell nearby, book trusted pros and never miss a notice. For HDB, condo and landed estates across Singapore.">
+    <meta property="og:image" content="https://www.doorlah.com/images/doorlah_splash.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@door_lah">
+    <link rel="icon" href="images/doorlah_splash.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/doorlah_splash.png">
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("doorlah-theme"); } catch (e) {}
+            if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&icon_names=add,add_circle,android,apartment,arrow_forward,arrow_outward,arrow_upward,battery_full,beach_access,bed,calendar_month,call,campaign,celebration,chair,check,check_circle,cleaning_services,close,cloud_off,contrast,dark_mode,delete,desk,domain,elevator,event,event_available,flag,forum,gavel,group,handshake,home,home_repair_service,house,inbox,inventory_2,key,light_mode,local_cafe,location_on,mail,mark_email_read,mode_fan,pause_circle,pedal_bike,pest_control,phone_iphone,photo_camera,plumbing,school,search,sell,signal_cellular_alt,soup_kitchen,speaker,star,store,storefront,tablet_mac,verified_user,water_drop&display=block">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="no-js">
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-nav">
         <div class="container nav-inner">
-            <a class="brand" href="#top">
-                <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="brand-logo">
+            <a class="brand" href="#top" aria-label="DoorLah home">
+                <span class="brand-tile"><img src="images/doorlah_splash.png" alt="" width="40" height="40"></span>
                 <span>DoorLah</span>
             </a>
             <nav class="nav-links" aria-label="Primary">
-                <a href="#features">Features</a>
-                <a href="#business">Business Mode</a>
-                <a href="#tech">Tech Edge</a>
-                <a href="#community">Singapore</a>
-                <a href="#about">About Us</a>
-                <a href="#download" class="nav-cta">Download</a>
+                <a href="#business">Business mode</a>
+                <a href="#safety">Safety</a>
+                <a href="#about">About</a>
             </nav>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="theme-switch" role="group" aria-label="Appearance">
+                <button type="button" data-theme-choice="system" aria-pressed="true" aria-label="Match system"><span class="ms" aria-hidden="true">contrast</span></button>
+                <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="Light"><span class="ms" aria-hidden="true">light_mode</span></button>
+                <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="Dark"><span class="ms" aria-hidden="true">dark_mode</span></button>
+            </div>
+            <a class="btn ink small nav-cta" href="#download">Get the app</a>
         </div>
     </header>
 
-    <main id="top">
-        <section class="hero">
+    <main id="main">
+        <section id="top" class="hero" data-tab="0">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">Community-first for Singapore</p>
-                    <h1>Your Neighborhood, Connected.</h1>
-                    <p class="hero-subtitle">
-                        The all-in-one community hub for Singapore's HDBs, Condominiums, and Private Estates.
-                        Chat with neighbors, discover local services, and shop within your trusted community.
-                    </p>
-                    <div class="hero-actions">
-                        <a class="btn primary" href="#download">Download DoorLah</a>
-                        <a class="btn ghost" href="#features">Explore Features</a>
+                    <p class="kicker enter" style="--i:0"><span class="ms" aria-hidden="true">apartment</span>For HDB, condo and landed estates across Singapore</p>
+                    <h1 class="display enter" style="--i:1">Your block, all in one place.</h1>
+                    <p class="lede enter" style="--i:2">Chat with neighbours, buy and sell nearby, book trusted pros and never miss a notice. DoorLah brings your block's everyday life into one simple app.</p>
+                    <div class="hero-actions enter" style="--i:3">
+                        <a class="store-badge" href="https://apps.apple.com/in/app/doorlah/id6755138562" target="_blank" rel="noopener">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" width="162" height="54">
+                        </a>
+                        <a class="btn soft" href="https://forms.gle/DwSXCWDer9uvjH8x7" target="_blank" rel="noopener"><span class="ms" aria-hidden="true">android</span>Join the Android beta</a>
                     </div>
+                    <p class="hero-note enter" style="--i:4">Free on iPhone. Android is in testing on Google Play.</p>
                 </div>
-                <div class="hero-visual">
-                    <div class="phone">
-                        <div class="phone-header">
-                            <div class="status-dot"></div>
-                            <span>Explore</span>
-                            <div class="status-badge">HDB 121</div>
-                        </div>
-                        <div class="phone-grid">
-                            <div class="tile chat">
-                                <div class="tile-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
-                                    </svg>
+
+                <div class="hero-visual enter" style="--i:2" aria-hidden="true">
+                    <div class="device">
+                        <div class="device-screen">
+                            <div class="device-island" data-island><span class="ms fill">check_circle</span><span>Listed in Market</span></div>
+                            <div class="device-status">
+                                <span>9:41</span>
+                                <span><span class="ms fill">signal_cellular_alt</span> <span class="ms fill">battery_full</span></span>
+                            </div>
+                            <div class="app-scroll">
+                                <div class="app-header">
+                                    <div>
+                                        <p class="app-date" data-today-date>Monday, 26 October</p>
+                                        <p class="app-block">Blk 302C Punggol Way</p>
+                                    </div>
+                                    <span class="app-avatar">WL</span>
                                 </div>
-                                <span>Community Chat</span>
-                            </div>
-                            <div class="tile notice">
-                                <div class="tile-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M13 2 3 14h9l-1 8 10-12h-9z"/>
-                                    </svg>
+                                <p class="app-greeting"><span data-greeting>Good evening, Wei.</span><span class="sub">3 things on your radar.</span></p>
+
+                                <div class="today-track" data-today>
+                                    <div class="today-card hue-160">
+                                        <div class="top"><span class="icon-tile"><span class="ms">mode_fan</span></span><span class="ms">arrow_outward</span></div>
+                                        <div><p class="eyebrow">Tomorrow, confirmed</p><strong>Aircon servicing with Hafiz</strong></div>
+                                    </div>
+                                    <div class="today-card hue-230">
+                                        <div class="top"><span class="icon-tile"><span class="ms">elevator</span></span><span class="ms">arrow_outward</span></div>
+                                        <div><p class="eyebrow">Notice, Punggol Way</p><strong>Lift maintenance on Thursday</strong></div>
+                                    </div>
+                                    <div class="today-card hue-80">
+                                        <div class="top"><span class="icon-tile"><span class="ms">celebration</span></span><span class="ms">arrow_outward</span></div>
+                                        <div><p class="eyebrow">Saturday</p><strong>Deepavali gathering at the void deck</strong></div>
+                                    </div>
                                 </div>
-                                <span>Notice Board</span>
-                            </div>
-                            <div class="tile market">
-                                <div class="tile-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <circle cx="9" cy="21" r="1"/>
-                                        <circle cx="20" cy="21" r="1"/>
-                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                                    </svg>
+
+                                <p class="app-section">Around you <small>Blk 302C chat</small></p>
+                                <div class="mini-list">
+                                    <span class="avatar hue-295">ML</span>
+                                    <div><b>Mei Ling</b><small>2 min</small><p>Found a blue umbrella at the void deck. Anyone's?</p></div>
                                 </div>
-                                <span>Marketplace</span>
-                            </div>
-                            <div class="tile services">
-                                <div class="tile-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M14.7 6.3a4 4 0 0 0-5.7 5.7l6.6 6.6 5.7-5.7z"/>
-                                        <path d="M8.2 11.8 6 14l4 4 2.2-2.2"/>
-                                    </svg>
+
+                                <p class="app-section">New in Market <small>See all</small></p>
+                                <div class="market-row">
+                                    <div class="market-mini hue-60"><div class="thumb"><span class="ms">desk</span><span class="pill-tag">New</span></div><b>$40</b><small>IKEA study desk</small></div>
+                                    <div class="market-mini hue-230"><div class="thumb"><span class="ms">bed</span><span class="pill-tag">For rent</span></div><b>$900/mo</b><small>Common room</small></div>
                                 </div>
-                                <span>Services & Shops</span>
                             </div>
-                        </div>
-                        <div class="phone-footer">
-                            <div class="home-button large" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                                    <path d="M3 11.5 12 4l9 7.5"/>
-                                    <path d="M6 10v9h12v-9"/>
-                                    <path d="M10 19v-5h4v5"/>
-                                </svg>
-                            </div>
-                            <div class="footer-tabs">
-                                <span>Home</span>
-                                <span>Discover</span>
-                                <span>Profile</span>
+                            <div class="device-dock">
+                                <div class="nav-pill">
+                                    <div class="nav-pill-indicator"></div>
+                                    <span class="is-active"><span class="ms">home</span></span>
+                                    <span><span class="ms">forum</span><i class="badge"></i></span>
+                                    <span><span class="ms">storefront</span></span>
+                                    <span><span class="ms">home_repair_service</span></span>
+                                </div>
+                                <span class="device-fab"><span class="ms">add</span></span>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-glow"></div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="explore">
+        <section class="pillars" data-tab="0" aria-label="What you can do">
             <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Explore</p>
-                    <h2>Everything your community needs, in one grid.</h2>
-                    <p>Four pillars that make DoorLah the everyday app for your neighborhood.</p>
-                </div>
-                <div class="feature-grid">
-                    <article class="feature-card chat reveal">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
-                            </svg>
-                        </div>
-                        <h3>Community Chat</h3>
-                        <p>Connect and communicate in real time with your neighbors, announcements, and resident groups.</p>
-                    </article>
-                    <article class="feature-card notice reveal">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 3h16v18H4z"/>
-                                <path d="M8 7h8M8 11h8M8 15h6"/>
-                            </svg>
-                        </div>
-                        <h3>Notice Board</h3>
-                        <p>Stay updated with the latest community announcements, events, and important notices.</p>
-                    </article>
-                    <article class="feature-card market reveal">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="9" cy="21" r="1"/>
-                                <circle cx="20" cy="21" r="1"/>
-                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                            </svg>
-                        </div>
-                        <h3>Marketplace</h3>
-                        <p>Buy, sell, or rent items, rooms, and homes within your community with trusted listings.</p>
-                    </article>
-                    <article class="feature-card services reveal">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 7h16v10H4z"/>
-                                <path d="M7 7V5a5 5 0 0 1 10 0v2"/>
-                            </svg>
-                        </div>
-                        <h3>Local Services & Shops</h3>
-                        <p>Discover trusted service providers and neighborhood shops at your doorstep.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="business" class="business">
-            <div class="container business-grid">
-                <div class="business-copy reveal">
-                    <p class="eyebrow">Business Mode</p>
-                    <h2>Your Passion, Your Business, Your Neighborhood.</h2>
-                    <p>
-                        Toggle instantly into Business Mode to manage your own shop or service.
-                        DoorLah turns residents into local entrepreneurs with instant digital storefronts.
-                    </p>
-                    <ul class="checklist">
-                        <li>Instant digital storefronts for community-based commerce.</li>
-                        <li>Manage bookings, promotions, and availability in one place.</li>
-                        <li>Reach neighbors first, with verified community audiences.</li>
-                    </ul>
-                </div>
-                <div class="business-card reveal">
-                    <div class="business-chip">Business Mode</div>
-                    <h3>Live storefront preview</h3>
-                    <div class="business-metrics">
-                        <div>
-                            <span>Orders</span>
-                            <strong>48 this week</strong>
-                        </div>
-                        <div>
-                            <span>Bookings</span>
-                            <strong>12 upcoming</strong>
-                        </div>
-                        <div>
-                            <span>Response time</span>
-                            <strong>under 5 min</strong>
-                        </div>
+                <div class="pillar-card hue-180 reveal">
+                    <div class="pillar-grid">
+                        <a class="pillar hue-230" href="#community"><span class="ms">forum</span><span class="go"><strong>Chat with neighbours</strong><span class="ms" aria-hidden="true">arrow_outward</span></span></a>
+                        <a class="pillar hue-40" href="#market"><span class="ms">sell</span><span class="go"><strong>Buy and sell nearby</strong><span class="ms" aria-hidden="true">arrow_outward</span></span></a>
+                        <a class="pillar hue-160" href="#services"><span class="ms">home_repair_service</span><span class="go"><strong>Book trusted pros</strong><span class="ms" aria-hidden="true">arrow_outward</span></span></a>
+                        <a class="pillar hue-295" href="#community"><span class="ms">campaign</span><span class="go"><strong>Never miss a notice</strong><span class="ms" aria-hidden="true">arrow_outward</span></span></a>
                     </div>
-                    <a class="btn primary" href="#download">Activate Business Mode</a>
                 </div>
             </div>
         </section>
 
-        <section id="tech" class="tech">
+        <section id="community" class="feature" data-tab="1">
             <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Fast & Reliable</p>
-                    <h2>Instant Load. Offline Ready.</h2>
-                    <p>Smart caching keeps DoorLah lightning fast and dependable, even with weak coverage.</p>
-                </div>
-                <div class="tech-grid">
-                    <article class="tech-card reveal">
-                        <h3>90-95% faster performance</h3>
-                        <p>Predictive caching ensures most views load instantly, even on the go.</p>
-                    </article>
-                    <article class="tech-card reveal">
-                        <h3>Offline-first access</h3>
-                        <p>Browse notices and saved listings without needing a live connection.</p>
-                    </article>
-                    <article class="tech-card reveal">
-                        <h3>Smarter data sync</h3>
-                        <p>Reduced data usage and fewer API calls for consistent performance.</p>
-                    </article>
+                <div class="panel hue-230">
+                    <div class="panel-copy reveal">
+                        <p class="kicker"><span class="ms" aria-hidden="true">forum</span>Community</p>
+                        <h2 class="title">One chat for your block. One board for your road.</h2>
+                        <p class="lede">Everyone who lives in your block shares a single chat, and notices go to every neighbour on your road. Ask about the lift, return a lost umbrella, announce a gathering.</p>
+                        <ul class="points">
+                            <li><span class="ms" aria-hidden="true">photo_camera</span><span>Send photos and reply to a message so threads stay clear.</span></li>
+                            <li><span class="ms" aria-hidden="true">campaign</span><span>Post a notice with a photo. New notices are marked for 24 hours.</span></li>
+                            <li><span class="ms" aria-hidden="true">flag</span><span>Report or block anyone, right from the message.</span></li>
+                        </ul>
+                    </div>
+                    <div class="screen reveal" style="--i:1" data-community>
+                        <div class="screen-title"><h3>Community</h3><span class="round-btn" aria-hidden="true"><span class="ms">search</span></span></div>
+                        <div class="segmented" role="tablist" aria-label="Community view" data-active="0">
+                            <span class="segmented-indicator" aria-hidden="true"></span>
+                            <button type="button" role="tab" aria-selected="true" aria-controls="pane-chats" id="tab-chats">Chats</button>
+                            <button type="button" role="tab" aria-selected="false" aria-controls="pane-notices" id="tab-notices" tabindex="-1">Notice board</button>
+                        </div>
+                        <div class="pane-stack">
+                            <div class="pane from-left" id="pane-chats" role="tabpanel" aria-labelledby="tab-chats">
+                                <div class="thread is-waiting" data-thread>
+                                    <div class="bubble-group"><span class="bubble-name">Mei Ling</span><span class="bubble">Is the lift at 302C working again?</span></div>
+                                    <div class="bubble-group mine"><span class="bubble">Town council says by 6pm today</span></div>
+                                    <div class="bubble-group hue-210"><span class="bubble-name">Hafiz</span><span class="bubble-photo" role="img" aria-label="Photo of an umbrella"><span class="ms">beach_access</span></span></div>
+                                    <div class="bubble-group"><span class="bubble">Found this at the void deck. Blue with white dots.</span></div>
+                                    <div class="bubble-group mine"><span class="bubble">That's my mum's! Coming down now 🙏</span></div>
+                                </div>
+                                <div class="composer" aria-hidden="true"><span>Message Blk 302C</span><span class="send"><span class="ms fill">arrow_upward</span></span></div>
+                            </div>
+                            <div class="pane" id="pane-notices" role="tabpanel" aria-labelledby="tab-notices" hidden>
+                                <p class="notice-road">To neighbours on Punggol Way</p>
+                                <div class="notice">
+                                    <span class="icon-tile hue-230"><span class="ms">elevator</span></span>
+                                    <div><strong>Lift maintenance, Blk 302C</strong><small>Thursday, 10am to 2pm</small></div>
+                                    <span class="new-dot" aria-label="New"></span>
+                                </div>
+                                <div class="notice">
+                                    <span class="icon-tile hue-200"><span class="ms">water_drop</span></span>
+                                    <div><strong>Water supply interruption</strong><small>Saturday morning, all units</small></div>
+                                    <span class="new-dot" aria-label="New"></span>
+                                </div>
+                                <div class="notice">
+                                    <span class="icon-tile hue-80"><span class="ms">celebration</span></span>
+                                    <div><strong>Deepavali gathering at the void deck</strong><small>Posted by Priya</small></div>
+                                </div>
+                                <div class="notice">
+                                    <span class="icon-tile hue-150"><span class="ms">pest_control</span></span>
+                                    <div><strong>Fogging around the carpark</strong><small>Next Tuesday</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="community" class="singapore">
-            <div class="container singapore-grid">
-                <div class="singapore-copy reveal">
-                    <p class="eyebrow">Singapore Focus</p>
-                    <h2>Made with ❤️ for Singapore Communities.</h2>
-                    <p>Designed for HDBs, Condominiums, and Private Estates with local-first workflows.</p>
-                    <div class="estate-tags">
-                        <span>HDB</span>
-                        <span>Condominiums</span>
-                        <span>Private Estates</span>
+        <section id="market" class="feature" data-tab="2">
+            <div class="container">
+                <div class="panel hue-40 flip">
+                    <div class="panel-copy reveal">
+                        <p class="kicker"><span class="ms" aria-hidden="true">storefront</span>Market</p>
+                        <h2 class="title">Sell the desk. Rent the room. Keep it in the block.</h2>
+                        <p class="lede">List something in under a minute with up to five photos. Everything you post shows up for the neighbours around you first.</p>
+                        <ul class="points">
+                            <li><span class="ms" aria-hidden="true">key</span><span>Rent out a home, a room or an item by the day, week, month or year.</span></li>
+                            <li><span class="ms" aria-hidden="true">call</span><span>Interested? Call the seller straight from the listing.</span></li>
+                            <li><span class="ms" aria-hidden="true">check_circle</span><span>Mark it as sold when it's gone, and manage it all in My listings.</span></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="singapore-card reveal">
-                    <h3>Neighborhood pulse</h3>
-                    <p>From notice updates to hyperlocal listings, every interaction feels like your block.</p>
-                    <div class="pulse-grid">
-                        <div>
-                            <strong>48</strong>
-                            <span>Active listings</span>
+                    <div class="screen reveal" style="--i:1" data-market>
+                        <div class="screen-title"><h3>Market</h3><span class="round-btn" aria-hidden="true"><span class="ms">inventory_2</span></span></div>
+                        <div class="search-pill" aria-hidden="true"><span class="ms">search</span>Search the market</div>
+                        <div class="chip-row" role="group" aria-label="Filter listings by category" data-spaced>
+                            <button type="button" class="chip" aria-pressed="true" data-filter="all">All</button>
+                            <button type="button" class="chip" aria-pressed="false" data-filter="rent">Rent</button>
+                            <button type="button" class="chip" aria-pressed="false" data-filter="furniture">Furniture</button>
+                            <button type="button" class="chip" aria-pressed="false" data-filter="electronics">Electronics</button>
+                            <button type="button" class="chip" aria-pressed="false" data-filter="kitchen">Kitchen</button>
                         </div>
-                        <div>
-                            <strong>12</strong>
-                            <span>New notices</span>
-                        </div>
-                        <div>
-                            <strong>8</strong>
-                            <span>Local services</span>
+                        <div class="market-grid" aria-live="polite">
+                            <div class="listing hue-60" data-cat="furniture"><div class="thumb"><span class="ms" aria-hidden="true">desk</span></div><b>$40</b><span>IKEA study desk</span><small>Like new, Blk 302C</small></div>
+                            <div class="listing hue-230" data-cat="rent"><div class="thumb"><span class="ms" aria-hidden="true">bed</span><span class="pill-tag">For rent</span></div><b>$900/mo</b><span>Common room near Punggol MRT</span><small>Monthly</small></div>
+                            <div class="listing hue-180" data-cat="kitchen"><div class="thumb"><span class="ms" aria-hidden="true">soup_kitchen</span><span class="pill-tag">Your listing</span></div><b>$35</b><span>Air fryer, barely used</span><small>Good</small></div>
+                            <div class="listing hue-210 is-sold" data-cat="electronics"><div class="thumb"><span class="ms" aria-hidden="true">tablet_mac</span><span class="pill-tag">Sold</span></div><b>$280</b><span>iPad, 9th gen</span><small>Good</small></div>
+                            <div class="listing hue-230 is-hidden" data-cat="rent"><div class="thumb"><span class="ms" aria-hidden="true">pedal_bike</span><span class="pill-tag">For rent</span></div><b>$8/day</b><span>Foldable bicycle</span><small>Daily</small></div>
+                            <div class="listing hue-210 is-hidden" data-cat="electronics"><div class="thumb"><span class="ms" aria-hidden="true">speaker</span></div><b>$60</b><span>Bluetooth speaker</span><small>Like new</small></div>
+                            <div class="listing hue-60 is-hidden" data-cat="furniture"><div class="thumb"><span class="ms" aria-hidden="true">chair</span></div><b>$25</b><span>Rattan armchair</span><small>Fair</small></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="download" class="download">
-            <div class="container download-card">
-                <div>
-                    <p class="eyebrow">Get Early Access</p>
-                    <h2>Download DoorLah and join the tester list.</h2>
-                    <p>Be the first to experience the premium neighborhood hub built for Singapore communities.</p>
-                </div>
-                <div class="download-actions">
-                    <a class="btn primary" href="https://forms.gle/DwSXCWDer9uvjH8x7" target="_blank" rel="noopener">Join Tester List</a>
-                    <div class="store-row">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on App Store" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+        <section id="services" class="feature" data-tab="3">
+            <div class="container">
+                <div class="panel hue-160">
+                    <div class="panel-copy reveal">
+                        <p class="kicker"><span class="ms" aria-hidden="true">home_repair_service</span>Services</p>
+                        <h2 class="title">Book the aircon guy your neighbours already trust.</h2>
+                        <p class="lede">Cleaning, repairs, aircon servicing, tuition, moving and more, from providers who serve your area. Pick a day, choose the hours and see the price before you book.</p>
+                        <ul class="points">
+                            <li><span class="ms" aria-hidden="true">event_available</span><span>Follow every booking from request to confirmed to done. Both sides mark it complete.</span></li>
+                            <li><span class="ms" aria-hidden="true">star</span><span>Rate the job afterwards, so the best providers rise to the top.</span></li>
+                            <li><span class="ms" aria-hidden="true">store</span><span>Browse shops nearby with their current specials, then call or open them in maps.</span></li>
+                        </ul>
                     </div>
+                    <div class="screen reveal" style="--i:1" data-services aria-hidden="true">
+                        <div class="cat-strip">
+                            <div class="cat-card hue-160"><span class="ms">cleaning_services</span><b>Cleaning</b></div>
+                            <div class="cat-card hue-210 is-on"><span class="ms">mode_fan</span><b>Aircon</b></div>
+                            <div class="cat-card hue-295"><span class="ms">school</span><b>Tuition</b></div>
+                            <div class="cat-card hue-40"><span class="ms">plumbing</span><b>Plumbing</b></div>
+                        </div>
+                        <div class="provider">
+                            <div class="provider-head">
+                                <span class="icon-tile hue-210"><span class="ms">mode_fan</span></span>
+                                <div><strong>Hafiz Aircon Care</strong><small><span class="ms">star</span>4.9 from 38 reviews, from $30/h</small></div>
+                            </div>
+                            <div class="day-strip">
+                                <span class="day">Today<b>26</b></span>
+                                <span class="day is-on">Sat<b>31</b></span>
+                                <span class="day">Sun<b>1</b></span>
+                                <span class="day">More<b>…</b></span>
+                            </div>
+                            <span class="btn ink book-btn">Book · Sat, 2h · $60</span>
+                        </div>
+                        <div class="status-track">
+                            <div class="status-steps" style="--progress:0" data-steps>
+                                <span class="status-fill"></span>
+                                <span class="status-step"><i><span class="ms">check</span></i>Pending</span>
+                                <span class="status-step"><i><span class="ms">check</span></i>Confirmed</span>
+                                <span class="status-step"><i><span class="ms">check</span></i>Completed</span>
+                            </div>
+                            <div class="rating-line"><span>How was Hafiz?</span><span class="stars" data-stars><span class="ms">star</span><span class="ms">star</span><span class="ms">star</span><span class="ms">star</span><span class="ms">star</span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="search" class="feature" data-tab="-1">
+            <div class="container">
+                <div class="panel hue-180 flip">
+                    <div class="panel-copy reveal">
+                        <p class="kicker"><span class="ms" aria-hidden="true">search</span>Search DoorLah</p>
+                        <h2 class="title">Find anything your block has said, sold or offered.</h2>
+                        <p class="lede">One search covers listings, services, shops, notices, the community chat and your own bookings. Type what you mean, not the exact words.</p>
+                    </div>
+                    <div class="screen reveal" style="--i:1" data-search aria-hidden="true">
+                        <div class="search-pill"><span class="ms">search</span><span><span class="typed" data-typed></span><span class="caret"></span></span></div>
+                        <div class="chip-row" data-spaced>
+                            <span class="chip is-on">All</span><span class="chip">Market</span><span class="chip">Services</span><span class="chip">Shops</span><span class="chip">Notices</span><span class="chip">Chat</span><span class="chip">Bookings</span>
+                        </div>
+                        <div class="search-results is-waiting" data-results>
+                            <div class="result"><span class="icon-tile hue-160"><span class="ms">home_repair_service</span></span><div><strong>Hafiz Aircon Care</strong><small>Service, from $30/h</small></div></div>
+                            <div class="result"><span class="icon-tile hue-295"><span class="ms">event</span></span><div><strong>Aircon servicing, Sat 31 Oct</strong><small>Your booking, confirmed</small></div></div>
+                            <div class="result"><span class="icon-tile hue-230"><span class="ms">forum</span></span><div><strong>"Who did your aircon? Mine is dripping"</strong><small>Chat, Blk 302C</small></div></div>
+                            <div class="result"><span class="icon-tile hue-40"><span class="ms">sell</span></span><div><strong>Daikin aircon remote</strong><small>Market, $15</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="create" class="feature" data-tab="-1">
+            <div class="container">
+                <div class="panel plain">
+                    <div class="panel-copy reveal">
+                        <p class="kicker"><span class="ms" aria-hidden="true">add_circle</span>Create</p>
+                        <h2 class="title">Post anything from one button.</h2>
+                        <p class="lede">Tap the plus on any tab to sell an item, post a notice or offer a service. It lands with your block right away.</p>
+                    </div>
+                    <div class="reveal" style="--i:1" aria-hidden="true">
+                        <div class="create-demo is-waiting" data-create>
+                            <div class="create-head"><h2>Create</h2><span class="close-btn"><span class="ms">close</span></span></div>
+                            <div class="create-rows">
+                                <div class="create-row hue-40"><span class="icon-tile"><span class="ms">sell</span></span><span><strong>Sell an item</strong><small>Listed in Market for your block</small></span><span class="ms">arrow_forward</span></div>
+                                <div class="create-row hue-230"><span class="icon-tile"><span class="ms">campaign</span></span><span><strong>Post a notice</strong><small>Ask, share or announce to your road</small></span><span class="ms">arrow_forward</span></div>
+                                <div class="create-row hue-160"><span class="icon-tile"><span class="ms">handshake</span></span><span><strong>Offer a service</strong><small>Tuition, baking, repairs…</small></span><span class="ms">arrow_forward</span></div>
+                            </div>
+                        </div>
+                        <div class="create-anchor"><span class="device-fab"><span class="ms">add</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="business" class="feature" data-tab="3">
+            <div class="container">
+                <div class="panel hue-295 flip">
+                    <div class="panel-copy reveal">
+                        <p class="kicker"><span class="ms" aria-hidden="true">storefront</span>Business mode</p>
+                        <h2 class="title">Run a shop or a service from the same app.</h2>
+                        <p class="lede">Turn on business mode in your profile. List your shop for the neighbourhood, offer your services to the community, or both. Choose up to five postal codes you serve.</p>
+                        <ul class="points">
+                            <li><span class="ms" aria-hidden="true">pause_circle</span><span>Pause your shop when you're away and resume when you're back.</span></li>
+                            <li><span class="ms" aria-hidden="true">inbox</span><span>Accept or decline booking requests as they come in.</span></li>
+                            <li><span class="ms" aria-hidden="true">calendar_month</span><span>Set your working hours once, in Singapore time, and block off days you're unavailable.</span></li>
+                        </ul>
+                    </div>
+                    <div class="screen reveal" style="--i:1" data-business>
+                        <div class="screen-title"><h3>Business mode</h3></div>
+                        <div class="biz">
+                            <div class="biz-card">
+                                <button type="button" class="biz-switch" role="switch" aria-checked="false" data-biz="shop" aria-controls="biz-shop">
+                                    <span class="icon-tile hue-60"><span class="ms" aria-hidden="true">store</span></span>
+                                    <span><strong>Shop owner</strong><small>List your shop for the neighbourhood</small></span>
+                                    <span class="toggle" aria-hidden="true"></span>
+                                </button>
+                                <div class="biz-detail" id="biz-shop"><div><div class="biz-inner">
+                                    <div class="biz-shop"><span class="icon-tile hue-60"><span class="ms" aria-hidden="true">local_cafe</span></span><span><strong>Punggol Kopi Corner</strong><small>Accepting customers</small></span><span class="btn soft small">Pause</span></div>
+                                    <div class="special hue-60"><small>Current special, until Sunday</small>Kopi and kaya toast set, $3.50</div>
+                                </div></div></div>
+                            </div>
+                            <div class="biz-card">
+                                <button type="button" class="biz-switch" role="switch" aria-checked="false" data-biz="service" aria-controls="biz-service">
+                                    <span class="icon-tile hue-160"><span class="ms" aria-hidden="true">handshake</span></span>
+                                    <span><strong>Service provider</strong><small>Offer your services to the community</small></span>
+                                    <span class="toggle" aria-hidden="true"></span>
+                                </button>
+                                <div class="biz-detail" id="biz-service"><div><div class="biz-inner">
+                                    <div class="stat-row"><span class="stat"><b>2</b><small>Services</small></span><span class="stat"><b>4.9</b><small>Rating</small></span><span class="stat"><b>3</b><small>Requests</small></span></div>
+                                    <div class="week hue-160" aria-label="Working hours Monday to Friday, 9am to 6pm">
+                                        <span><i></i>Mon</span><span><i></i>Tue</span><span><i></i>Wed</span><span><i></i>Thu</span><span><i></i>Fri</span><span class="off"><i></i>Sat</span><span class="off"><i></i>Sun</span>
+                                    </div>
+                                </div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety" class="safety" data-tab="-1">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="kicker"><span class="ms" aria-hidden="true">verified_user</span>Trust and safety</p>
+                    <h2 class="title">Built for the people next door.</h2>
+                    <p class="lede">DoorLah only works if neighbours feel safe. These are the rules and tools that keep it that way.</p>
+                </div>
+                <div class="safety-grid">
+                    <div class="list reveal">
+                        <div class="list-row"><span class="icon-tile hue-180"><span class="ms" aria-hidden="true">gavel</span></span><div><h3>Standards come first</h3><p>Everyone agrees to the Terms of Use and Community Standards before they see their neighbours' posts.</p></div></div>
+                        <div class="list-row"><span class="icon-tile hue-20"><span class="ms" aria-hidden="true">flag</span></span><div><h3>Report or block, anywhere</h3><p>On messages, notices, listings, services and shops. We review every report within 24 hours.</p></div></div>
+                        <div class="list-row"><span class="icon-tile hue-230"><span class="ms" aria-hidden="true">location_on</span></span><div><h3>Tied to your block</h3><p>Your postal code places you in your block's community. Owners can add their tenants.</p></div></div>
+                    </div>
+                    <div class="list reveal" style="--i:1">
+                        <div class="list-row"><span class="icon-tile hue-295"><span class="ms" aria-hidden="true">mark_email_read</span></span><div><h3>Verified sign-up</h3><p>New accounts confirm their email before they can sign in.</p></div></div>
+                        <div class="list-row"><span class="icon-tile hue-60"><span class="ms" aria-hidden="true">cloud_off</span></span><div><h3>Works on patchy signal</h3><p>Saved chats, notices and listings stay viewable when you're offline.</p></div></div>
+                        <div class="list-row"><span class="icon-tile hue-150"><span class="ms" aria-hidden="true">delete</span></span><div><h3>Leave whenever you like</h3><p>Delete your account from your profile at any time. Your listings and shops are taken down with it.</p></div></div>
+                    </div>
+                </div>
+                <div class="safety-links reveal">
+                    <a class="btn soft small" href="child-safety.html">Safety standards</a>
+                    <a class="btn soft small" href="privacy.html">Privacy policy</a>
+                    <a class="btn soft small" href="terms-of-service.html">Terms of service</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download" data-tab="-1">
+            <div class="container">
+                <div class="download-card reveal">
+                    <div>
+                        <h2 class="title">Get DoorLah for your block.</h2>
+                        <p class="lede">Made with ❤️ for Singapore communities. Sign up with your email, enter your postal code, and you're in.</p>
+                        <div class="estate-tags">
+                            <span><span class="ms" aria-hidden="true">apartment</span>HDB</span>
+                            <span><span class="ms" aria-hidden="true">domain</span>Condominiums</span>
+                            <span><span class="ms" aria-hidden="true">house</span>Landed estates</span>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a class="store-option" href="https://apps.apple.com/in/app/doorlah/id6755138562" target="_blank" rel="noopener">
+                            <span class="icon-tile"><span class="ms" aria-hidden="true">phone_iphone</span></span>
+                            <span><strong>Download on the App Store</strong><small>For iPhone</small><span class="status-chip">Available now</span></span>
+                            <span class="ms" aria-hidden="true">arrow_outward</span>
+                        </a>
+                        <a class="store-option" href="https://forms.gle/DwSXCWDer9uvjH8x7" target="_blank" rel="noopener">
+                            <span class="icon-tile"><span class="ms" aria-hidden="true">android</span></span>
+                            <span><strong>Join the Android beta</strong><small>Google Play</small><span class="status-chip">In testing</span></span>
+                            <span class="ms" aria-hidden="true">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section" data-tab="-1">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="kicker"><span class="ms" aria-hidden="true">group</span>About us</p>
+                    <h2 class="title">The NTU Singapore team behind DoorLah.</h2>
+                </div>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <img src="https://adigo.fyi/assets/dp.jpeg" alt="Aditya" class="about-avatar" loading="lazy" width="64" height="64">
+                        <div>
+                            <h3>Aditya</h3>
+                            <p class="about-role">MSAI, NTU Singapore</p>
+                            <p>AI/ML specialist focused on LLMs, vector search and responsible AI.</p>
+                            <div class="about-links">
+                                <a href="https://adigo.fyi/" target="_blank" rel="noopener">Portfolio</a>
+                                <a href="https://www.linkedin.com/in/adigo10/" target="_blank" rel="noopener">LinkedIn</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="about-card reveal" style="--i:1">
+                        <img src="https://abhisheksrivastava99.github.io/pic-deploy.jpg" alt="Abhishek" class="about-avatar" loading="lazy" width="64" height="64">
+                        <div>
+                            <h3>Abhishek</h3>
+                            <p class="about-role">MS FinTech, NTU Singapore</p>
+                            <p>Fintech-focused data engineer with cybersecurity and ML experience.</p>
+                            <div class="about-links">
+                                <a href="https://abhisheksrivastava99.github.io/" target="_blank" rel="noopener">Portfolio</a>
+                                <a href="https://www.linkedin.com/in/abhisheksrivastava99/" target="_blank" rel="noopener">LinkedIn</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">Team</p>
-                <h2>About Us</h2>
-                <p>Meet the NTU Singapore team behind DoorLah.</p>
-            </div>
-            <div class="about-grid">
-                <article class="about-card">
-                    <img src="https://adigo10.github.io/dp.jpeg" alt="Aditya" class="about-avatar" loading="lazy">
-                    <div>
-                        <h3>Aditya</h3>
-                        <p class="about-role">NTU Singapore · AI/ML</p>
-                        <p>AI/ML specialist focused on LLMs, vector search, and responsible AI.</p>
-                        <div class="about-links">
-                            <a href="https://adigo10.github.io/" target="_blank" rel="noopener">Portfolio</a>
-                            <a href="https://www.linkedin.com/in/adigo10/" target="_blank" rel="noopener">LinkedIn</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="about-card">
-                    <img src="https://abhisheksrivastava99.github.io/pic-deploy.jpg" alt="Abhishek" class="about-avatar" loading="lazy">
-                    <div>
-                        <h3>Abhishek</h3>
-                        <p class="about-role">NTU Singapore · FinTech</p>
-                        <p>Fintech-focused data engineer with cybersecurity and ML experience.</p>
-                        <div class="about-links">
-                            <a href="https://abhisheksrivastava99.github.io/" target="_blank" rel="noopener">Portfolio</a>
-                            <a href="https://www.linkedin.com/in/abhisheksrivastava99/" target="_blank" rel="noopener">LinkedIn</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <div class="brand footer-brand">
-                    <img src="images/doorlah_splash.png" alt="DoorLah Logo" class="brand-logo">
+                <a class="brand footer-brand" href="#top">
+                    <span class="brand-tile"><img src="images/doorlah_splash.png" alt="" width="40" height="40"></span>
                     <span>DoorLah</span>
-                </div>
-                <p>Connecting Singapore communities, one neighborhood at a time.</p>
+                </a>
+                <p>Your block, all in one place. For HDB, condo and landed estates across Singapore.</p>
                 <div class="socials">
-                    <a href="https://www.instagram.com/doorlah" aria-label="Instagram" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="3" y="3" width="18" height="18" rx="5"/>
-                            <circle cx="12" cy="12" r="4"/>
-                            <circle cx="17" cy="7" r="1"/>
-                        </svg>
+                    <a href="https://www.instagram.com/doorlah" aria-label="DoorLah on Instagram" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
                     </a>
-                    <a href="https://www.linkedin.com/company/doorlah" aria-label="LinkedIn" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M6 9v9M6 6v.01M10 9v9M10 13a3 3 0 0 1 6 0v5"/>
-                        </svg>
+                    <a href="https://www.linkedin.com/company/doorlah" aria-label="DoorLah on LinkedIn" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z"/></svg>
                     </a>
-                    <a href="https://x.com/door_lah" aria-label="X" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M4 4l16 16M20 4L4 20"/>
-                        </svg>
+                    <a href="https://x.com/door_lah" aria-label="DoorLah on X" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg>
                     </a>
                 </div>
             </div>
             <div class="footer-links">
                 <div>
                     <h4>Product</h4>
-                    <a href="#features">Features</a>
-                    <a href="#business">Business Mode</a>
-                    <a href="#tech">Tech Edge</a>
+                    <a href="#community">Community</a>
+                    <a href="#market">Market</a>
+                    <a href="#services">Services</a>
+                    <a href="#business">Business mode</a>
                     <a href="#download">Download</a>
                 </div>
                 <div>
                     <h4>Company</h4>
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
-                    <a href="child-safety.html">Safety Standards</a>
-                    <a href="account-deletion.html">Request Account Deletion</a>
+                    <a href="#about">About us</a>
+                    <a href="privacy.html">Privacy policy</a>
+                    <a href="terms-of-service.html">Terms of service</a>
+                    <a href="child-safety.html">Safety standards</a>
+                    <a href="account-deletion.html">Delete your account</a>
                 </div>
                 <div>
                     <h4>Contact</h4>
@@ -363,16 +515,31 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; <span class="footer-year">2025</span> DoorLah. Made with ❤️ for Singapore Communities.</p>
+        <div class="container footer-bottom">
+            <p>&copy; <span class="footer-year">2026</span> DoorLah. Made with ❤️ for Singapore communities.</p>
         </div>
     </footer>
 
-    <button class="scroll-top" aria-label="Scroll to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M6 15l6-6 6 6"/>
-        </svg>
-    </button>
+    <div class="dock" data-dock>
+        <nav class="nav-pill" aria-label="Sections" data-index="0" style="--nav-index:0">
+            <span class="nav-pill-indicator" aria-hidden="true"></span>
+            <a href="#top" aria-current="true"><span class="ms" aria-hidden="true">home</span><span class="nav-label">Home</span></a>
+            <a href="#community"><span class="ms" aria-hidden="true">forum</span><span class="nav-label">Community</span></a>
+            <a href="#market"><span class="ms" aria-hidden="true">storefront</span><span class="nav-label">Market</span></a>
+            <a href="#services"><span class="ms" aria-hidden="true">home_repair_service</span><span class="nav-label">Services</span></a>
+        </nav>
+        <div class="fab" data-fab>
+            <button type="button" class="fab-toggle" aria-expanded="false" aria-controls="fab-card" aria-label="Get DoorLah"><span class="ms" aria-hidden="true">add</span></button>
+            <div class="fab-card" id="fab-card" role="dialog" aria-label="Get DoorLah">
+                <div class="create-head"><h2>Get DoorLah</h2><button type="button" class="close-btn" data-fab-close aria-label="Close"><span class="ms" aria-hidden="true">close</span></button></div>
+                <div class="create-rows">
+                    <a class="create-row hue-230" href="https://apps.apple.com/in/app/doorlah/id6755138562" target="_blank" rel="noopener"><span class="icon-tile"><span class="ms" aria-hidden="true">phone_iphone</span></span><span><strong>App Store</strong><small>Available now for iPhone</small></span><span class="ms" aria-hidden="true">arrow_forward</span></a>
+                    <a class="create-row hue-160" href="https://forms.gle/DwSXCWDer9uvjH8x7" target="_blank" rel="noopener"><span class="icon-tile"><span class="ms" aria-hidden="true">android</span></span><span><strong>Android beta</strong><small>Join testing on Google Play</small></span><span class="ms" aria-hidden="true">arrow_forward</span></a>
+                    <a class="create-row hue-40" href="mailto:doorlah.singapore@gmail.com"><span class="icon-tile"><span class="ms" aria-hidden="true">mail</span></span><span><strong>Email the team</strong><small>doorlah.singapore@gmail.com</small></span><span class="ms" aria-hidden="true">arrow_forward</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
